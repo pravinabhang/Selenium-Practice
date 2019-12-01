@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SpiceJetSuite" parallel="false">
+
+<parameter name="browser" value="firefox"></parameter>
+  <test name="SpiceJetTest">
+    <classes>
+     <!--   <class name="testcases.logincenarios.VerifyLoginFunctionality"/> -->
+      <class name="testcases.SpiceJetHomePageTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
