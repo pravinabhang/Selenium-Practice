@@ -22,7 +22,7 @@ public class DriverSetUp {
 		opt.addArguments("disable-extensions");
 		opt.addArguments("--start-maximized");
 		driver=new ChromeDriver(opt);
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		timeOutSettings();
 	}
 	static void timeOutSettings(){
