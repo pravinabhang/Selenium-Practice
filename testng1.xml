@@ -5,7 +5,8 @@
 <parameter name="browser" value="chrome"></parameter>
   <test name="SpiceJetTest">
     <classes>
-        <class name="testcases.SpiceJetHomePageTest"></class>
+        <class name="testcases.SpiceJetHomePageTest">
+        </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
