@@ -28,5 +28,10 @@ public class SpiceJetHomePageTest extends DriverSetUp{
 				+ "International, Cheap Air Tickets";
 		Assert.assertEquals(sp.getPageTitle(), expTitle);
 	}
+	@Test
+	public void logoTest(){
+		System.out.println("This is Logo Test! ");
+	}
+	
 
 }
