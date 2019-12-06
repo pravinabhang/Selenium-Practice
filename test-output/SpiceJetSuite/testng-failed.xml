@@ -2,19 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SpiceJetSuite]">
   <parameter name="browser" value="firefox"/>
+  <parameter name="URL" value="https://www.spicejet.com/"/>
   <test name="SpiceJetTest">
     <classes>
       <class name="testcases.SpiceJetHomePageTest"/>
     </classes>
   </test> <!-- SpiceJetTest -->
-  <test name="SpiceJetTest(failed)">
-    <classes>
-      <class name="testcases.SpiceJetHomePageTest">
-        <methods>
-          <include name="homePageTest"/>
-          <include name="setUP"/>
-        </methods>
-      </class> <!-- testcases.SpiceJetHomePageTest -->
-    </classes>
-  </test> <!-- SpiceJetTest(failed) -->
 </suite> <!-- Failed suite [SpiceJetSuite] -->

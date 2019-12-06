@@ -3,6 +3,7 @@
 <suite name="SpiceJetSuite" parallel="false">
 
 <parameter name="browser" value="firefox"></parameter>
+<parameter name="URL" value="https://www.spicejet.com/"></parameter>
   <test name="SpiceJetTest">
     <classes>
      <!--   <class name="testcases.logincenarios.VerifyLoginFunctionality"/> -->

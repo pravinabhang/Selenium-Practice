@@ -1,37 +1,26 @@
 package testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import utilities.BaseClass;
 
-import pages.SpiceJetHomePage;
-import utilities.DriverSetUp;
-
-public class SpiceJetHomePageTest extends DriverSetUp{
+public class SpiceJetHomePageTest extends BaseClass{
 	
-	@BeforeClass
-	@Parameters("browser")
-	public void setUP(String browser){
-		if(browser.equals("firefox"))
-			super.FireFox();
-		else
-			super.Chrome();
-		driver.get("https://www.spicejet.com/");
-	}	
-	@Test
+	@Test(priority=1)
 	public void homePageTest(){
-		System.out.println("Home Page Loding...");
-		SpiceJetHomePage sp=new SpiceJetHomePage(driver);
 		System.out.println(sp.getPageTitle());
 		String expTitle="SpiceJet - Flight Booking for Domestic and "
 				+ "International, Cheap Air Tickets";
 		Assert.assertEquals(sp.getPageTitle(), expTitle);
 	}
-	@Test
+	@Test(priority=3, groups="smoke")
 	public void logoTest(){
 		System.out.println("This is Logo Test! ");
 	}
 	
+	@Test(priority=2)
+	public void addOnsTest() throws InterruptedException{
+		Assert.assertTrue(sp.getMealPage().isDisplayed());
+	}
 
 }
